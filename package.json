@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "npx lite-server",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "server": "npx lite-server",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +18,8 @@
     "browser-sync": "^2.26.13",
     "browser-sync-webpack-plugin": "^2.0.1",
     "cross-env": "^7.0.3",
-    "laravel-mix": "^5.0.9",
+    "laravel-mix": "^6.0.18",
+    "postcss": "^8.1.14",
     "resolve-url-loader": "^3.1.0",
     "sass": "^1.30.0",
     "sass-loader": "^8.0.2"

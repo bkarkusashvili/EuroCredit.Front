@@ -2,3 +2,14 @@
 @import 'reset';
 @import 'fonts';
 @import 'base';
+
+header {
+  display: flex;
+  justify-content: center;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

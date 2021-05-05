@@ -16,6 +16,8 @@ mix.disableSuccessNotifications();
 mix.setPublicPath('assets')
   .setResourceRoot('./');
 
+mix.copyDirectory('./src/images', './assets/images')
+
 mix
   // .js('src/app.js', 'dist/')
   .sass('./src/app.scss', 'style.css');
