@@ -11,16 +11,16 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.browserSync('http://localhost:3000/');
+// mix.browserSync('http://localhost:3000/');
 mix.disableSuccessNotifications();
 mix.setPublicPath('assets')
   .setResourceRoot('./');
 
-mix.copyDirectory('./src/images', './assets/images')
+mix.copyDirectory('./src/style/images', './assets/images')
 
 mix
-  // .js('src/app.js', 'dist/')
-  .sass('./src/app.scss', 'style.css');
+  .js('./src/script/app.js', 'app.js')
+  .sass('./src/style/app.scss', 'style.css');
 
 // Full API
 // mix.js(src, output);

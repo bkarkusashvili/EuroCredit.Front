@@ -1,0 +1,18 @@
+{
+    "/app.js": "/app.js",
+    "/style.css": "/style.css",
+    "/images/arrow.svg": "/images/arrow.svg",
+    "/images/atm.png": "/images/atm.png",
+    "/images/card.png": "/images/card.png",
+    "/images/check.svg": "/images/check.svg",
+    "/images/close.svg": "/images/close.svg",
+    "/images/country.png": "/images/country.png",
+    "/images/footer-bg.svg": "/images/footer-bg.svg",
+    "/images/landing.png": "/images/landing.png",
+    "/images/logo.png": "/images/logo.png",
+    "/images/trade.png": "/images/trade.png",
+    "/images/wallyPay.png": "/images/wallyPay.png",
+    "/images/app-store.png": "/images/app-store.png",
+    "/images/google-pay.png": "/images/google-pay.png",
+    "/images/google-play.png": "/images/google-play.png"
+}
