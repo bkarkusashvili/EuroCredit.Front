@@ -12,3 +12,5 @@ document.querySelector('#dialog').addEventListener('click', (event) => {
 
   closeDialog();
 })
+
+AOS.init();

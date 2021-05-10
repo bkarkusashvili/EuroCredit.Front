@@ -25,6 +25,7 @@ document.querySelector('#dialog').addEventListener('click', function (event) {
   if (event.target.id !== 'dialog') return;
   closeDialog();
 });
+AOS.init();
 
 /***/ }),
 
